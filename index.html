@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Mogadishu - Student Management System</title>
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Premium Icons from Phosphor -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="ph-fill ph-graduation-cap"></i>
+            </div>
+            <h1>SMS Mogadishu</h1>
+        </div>
+        <nav class="desktop-nav">
+            <a href="#" class="nav-link">Login</a>
+            <a href="#" class="btn btn-warning">Register</a>
+        </nav>
+        <button class="mobile-menu-btn desktop-hide">
+            <i class="ph ph-list"></i>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200" alt="University Building" class="hero-image">
+                <div class="hero-image-overlay">
+                    <span class="badge">EDUCATION FIRST</span>
+                    <p>Building the future of Somalia, one student at a time.</p>
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <h2 class="hero-title">Modernizing Education in Mogadishu</h2>
+                <p class="hero-subtitle">The most advanced Student Management and Information System designed for academic excellence and administrative efficiency.</p>
+                
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary primary-action">Get Started Today</a>
+                    <a href="#" class="btn btn-secondary secondary-action">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="section-header">
+                <h3>Core Features</h3>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-wrapper icon-yellow">
+                        <i class="ph-fill ph-user-focus"></i>
+                    </div>
+                    <h4>Student Records</h4>
+                    <p>Secure digital history</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon-wrapper icon-dark">
+                        <i class="ph-fill ph-book-open"></i>
+                    </div>
+                    <h4>Course Tools</h4>
+                    <p>Curriculum planning</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon-wrapper icon-dark">
+                        <i class="ph-fill ph-calendar-check"></i>
+                    </div>
+                    <h4>Attendance</h4>
+                    <p>Real-time tracking</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon-wrapper icon-yellow">
+                        <i class="ph-fill ph-chart-line-up"></i>
+                    </div>
+                    <h4>Grade Reports</h4>
+                    <p>Instant performance</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="stars">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+            </div>
+            <p class="quote">"Enabling a brighter future for Mogadishu students through cutting-edge technology and accessible data."</p>
+            <p class="author">- Ministry of Education</p>
+        </section>
+    </main>
+
+    <nav class="bottom-nav desktop-hide">
+        <a href="#" class="bottom-nav-item active">
+            <i class="ph-fill ph-house"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="ph-fill ph-student"></i>
+            <span>Admissions</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="ph-fill ph-books"></i>
+            <span>Academics</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="ph-fill ph-question-mark"></i>
+            <span>Support</span>
+        </a>
+    </nav>
+
+    <!-- Script for subtle interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, index) => {
+                // Add staggered animation delay
+                card.style.animationDelay = `${index * 0.15 + 0.5}s`;
+                card.classList.add('fade-in-up-delay');
+            });
+        });
+    </script>
+</body>
+</html>
